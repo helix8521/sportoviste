@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sportoviste v MSK</title>
+
+  <!-- Načtení Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Vlastní styly -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <div class="container py-3">
+    <header>
+      <!-- Navigační lišta -->
+      <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+
+        <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+          <a class="me-3 py-2 text-dark text-decoration-none" href="./index.html"><b>Sportoviště</b></a>
+          <a class="me-3 py-2 text-dark text-decoration-none" href="./vloz.html">Vlož nové sportoviště</a>
+          <a class="me-3 py-2 text-dark text-decoration-none" href="./onas.html">O nás</a>
+          <a class="me-3 py-2 text-dark text-decoration-none" href="./map.html">Mapa</a>
+        </nav>
+      </div>
+
+      <!-- Úvodní sekce s názvem a popisem -->
+      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <h1 class="display-4 fw-normal">Sportoviště v MSK</h1>
+        <p class="fs-5 text-muted">Máte rádi sport a pohyb? Chcete si zlepšit kondici, zdraví a náladu? Pak na nic
+          nečekejte a vyrazte na své oblíbené sportoviště. Nebo navštivte víceúčelové hřiště, kde se můžete věnovat
+          různým sportům. Přehled sportovních hřišť v lokalitě Moravskoslezský kraj.</p>
+      </div>
+    </header>
+
+    <main>
+      <!-- Sekce se seznamem sportovišť -->
+      <div class="container px-4 py-5" id="featured-3">
+        <h2 class="pb-2 border-bottom">Sportovistě v Moravskoslezském kraji</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3" id="zaznamBox">
+
+        </div>
+      </div>
+    </main>
+
+    <!-- Zápatí stránky -->
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+
+    </footer>
+
+
+  </div>
+</body>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- Načtení vlastních skriptů -->
+<script src="./src/getData.js"></script>
+<script src="./src/script.js"></script>
+
+</html>

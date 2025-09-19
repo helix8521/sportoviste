@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Hlavička dokumentu obsahující základní metadaty, nastavení kódování, viewport pro responzivní design, název stránky a odkazy na externí styly Bootstrap a vlastní CSS soubor -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sportoviste v MSK</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<!-- Tělo stránky s hlavním kontejnerem pro obsah, rozdělené na hlavičku, hlavní obsah a zápatí -->
+<body>
+
+  <div class="container py-3">
+    <!-- Hlavička stránky obsahující navigační menu a úvodní text s popisem aplikace -->
+    <header>
+      <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+
+        <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+          <a class="me-3 py-2 text-dark text-decoration-none" href="./index.html">Sportoviště</a>
+          <a class="me-3 py-2 text-dark text-decoration-none" href="./vloz.html"><b>Vlož nové sportoviště</b></a>
+          <a class="me-3 py-2 text-dark text-decoration-none" href="./onas.html">O nás</a>
+          <a class="me-3 py-2 text-dark text-decoration-none" href="./map.html">Mapa</a>
+        </nav>
+      </div>
+
+      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <h1 class="display-4 fw-normal">Sportoviště v MSK</h1>
+        <p class="fs-5 text-muted">Máte rádi sport a pohyb? Chcete si zlepšit kondici, zdraví a náladu? Pak na nic
+          nečekejte a vyrazte na své oblíbené sportoviště. Nebo navštivte víceúčelové hřiště, kde se můžete věnovat
+          různým sportům. Přehled sportovních hřišť v lokalitě Moravskoslezský kraj.</p>
+      </div>
+    </header>
+
+    <!-- Hlavní obsah stránky obsahující formulář pro vkládání nových sportovišť s různými poli pro zadávání údajů -->
+    <main>
+
+      <!-- Formulář pro zadávání údajů o novém sportovišti, s validací a tlačítkem pro odeslání -->
+      <form class="needs-validation" action="" name="data-form" id="FormData">
+        <div class="row">
+          <!-- Pole pro zadání názvu sportoviště -->
+          <div class="col-md-3">
+            <label for="nazev">Název</label>
+            <input type="text" class="form-control" id="nazev" placeholder="" value="" required>
+          </div>
+          <!-- Pole pro zadání adresy sportoviště -->
+          <div class="col-md-2">
+            <label for="adresa">Adresa</label>
+            <input type="text" class="form-control" id="adresa" placeholder="" value="" required>
+          </div>
+          <!-- Pole pro zadání URL na oficiální stránky sportoviště -->
+          <div class="col-md-3">
+            <label for="url">URL na oficiální stránky</label>
+            <input type="text" class="form-control" id="url" placeholder="" value="" required>
+          </div>
+          <!-- Výběr typu sportu z předdefinovaných možností -->
+          <div class="col-md-2">
+            <label for="typS">Typ sportu</label>
+            <select class="form-select" id="typS" required>
+              <option value="">Vyberte typ sportu</option>
+              <option value="Fotbal">Fotbal</option>
+              <option value="Atletika">Atletika</option>
+            </select>
+          </div>
+          <!-- Pole pro zadání zeměpisných souřadnic (zeměpisná délka a šířka) -->
+          <div class="col-md-2">
+            <label for="inputLong">Z.Š. souřadnice</label>
+            <input type="text" class="form-control" id="inputLong" placeholder="18.23167">
+            <label for="inputLat">Z.D. souřadnice</label>
+            <input type="text" class="form-control" id="inputLat" placeholder="49.80717">
+          </div>
+
+        </div>
+        <hr class="mb-4">
+        <!-- Tlačítko pro odeslání formuláře -->
+        <button class="btn btn-primary btn-lg btn-block" type="submit" name="submit" id="button-submit">Odeslat</button>
+      </form>
+
+    </main>
+
+    <!-- Zápatí stránky, zatím prázdné, pro budoucí obsah jako kontakty nebo odkazy -->
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      
+    </footer>
+
+
+  </div>
+</body>
+
+<!-- Skripty pro načtení Bootstrap JavaScript knihovny a vlastního JavaScript souboru pro manipulaci s daty -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script src="./src/setData.js"></script>
+
+</html>

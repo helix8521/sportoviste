@@ -1,0 +1,24 @@
+ArcGIS Online:
+https://vsb-tuo.maps.arcgis.com/home/item.html?id=ddbd1a2f7e38426e835bf93b864325bc 
+
+Je nutné provést následující nastavení u takto vypublikované služby:
+1) Excel vypublikujeme na ArcGIS Online jako hoster feature layer s Lon Lat souradnicemi z ArcGIS Pro
+1a) zajistíme, aby byl podkladový souřadnicový systém, WGS 84 - v nastavení publikování povolíme Public data collection a Editaci
+
+Pokud to neudelame, pak to muzeme udelat na arcGIS online
+2) V settings aktivujeme tzv. Public Data Collection - approve this layer to be shared with public
+3) Dále aktivujeme EDITACI
+4) Ulozit nastaveni
+5) Sdílení s verejností
+6) Nyní lze pristupovat ke sluzbe 
+
+Rest API
+https://vsb-tuo.maps.arcgis.com/home/item.html?id=ddbd1a2f7e38426e835bf93b864325bc&view=service#overview
+
+Fetch ArcGIS:
+https://services5.arcgis.com/UbiPR9eAyIWvC8EM/arcgis/rest/services/geoweb_data_sportoviste_2024/FeatureServer
+
+
+Integrace s bootstrap:
+Ideálne vytvořit tzv. features - https://getbootstrap.com/docs/5.0/examples/features/
+Ukázat jak to vypada, když se všechno napíše do HTML a poté, jak se to dá dynamicky generovat v JavaScriptu

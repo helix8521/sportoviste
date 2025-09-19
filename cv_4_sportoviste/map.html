@@ -1,0 +1,89 @@
+<!-- HTML dokument -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Hlavička stránky -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportoviste v MSK</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <!-- Vlastní CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<!-- Tělo stránky -->
+<body>
+
+    <!-- Hlavní kontejner -->
+    <div class="container py-3">
+        <!-- Hlavička -->
+        <header>
+            <!-- Navigační lišta -->
+            <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+
+                <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+                    <a class="me-3 py-2 text-dark text-decoration-none" href="./index.html">Sportoviště</a>
+                    <a class="me-3 py-2 text-dark text-decoration-none" href="./vloz.html">Vlož nové sportoviště</a>
+                    <a class="me-3 py-2 text-dark text-decoration-none" href="./onas.html">O nás</a>
+                    <a class="me-3 py-2 text-dark text-decoration-none" href="./map.html"><b>Mapa</b></a>
+                </nav>
+            </div>
+
+            <!-- Úvodní sekce -->
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                <h1 class="display-4 fw-normal">Sportoviště v MSK</h1>
+                <p class="fs-5 text-muted">Máte rádi sport a pohyb? Chcete si zlepšit kondici, zdraví a náladu? Pak na
+                    nic
+                    nečekejte a vyrazte na své oblíbené sportoviště. Nebo navštivte víceúčelové hřiště, kde se můžete
+                    věnovat
+                    různým sportům. Přehled sportovních hřišť v lokalitě Moravskoslezský kraj.</p>
+            </div>
+        </header>
+
+        <!-- Hlavní obsah stránky: Kontejner s nadpisem a mapou sportovišť v Moravskoslezském kraji -->
+        <main>
+                    <!-- Div s ID "map" pro zobrazení interaktivní mapy pomocí Leaflet -->
+
+            <div class="container px-4 py-5" id="featured-3">
+                <h2 class="pb-2 border-bottom">Mapa sportovišť v Moravskoslezském kraji</h2>
+                <div id="map"></div>
+
+            </div>
+        </main>
+
+
+
+<!-- Zápatí stránky s horním okrajem a paddingem -->
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+            
+        </footer>
+    </div>
+
+
+
+
+</body>
+
+
+<!-- Skripty: Bootstrap pro stylování, Leaflet pro mapu, vlastní skripty pro načítání dat a mapu -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+<script src="./src/getData.js"></script>
+<script src="./src/map.js"></script>
+
+</html>
