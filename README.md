@@ -1,0 +1,1 @@
+Tato aplikace je seznam sportovišť v Ostravě. Bohužel zde nefunguje mapa, jelikož při přechodu z bakalářského na magisterské studium došlo ke smazání dat ze serveru ArcGIS online, ze kterého byla data stahována.
